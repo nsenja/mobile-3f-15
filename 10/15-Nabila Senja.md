@@ -1,32 +1,23 @@
-# Pertemuan 10 (luring)
-## Ringkasan Materi
+# 10 - Login and Register
+Rangkuman :
 
-- Resource : mentransfrom isi data
-- Penggunaan php artisan tinker untuk insert data pada tabel database sebagai alternatif pengganti form (memakai query eloquent laravel)
+- Scaffold (wadah dasar flutter)->memiliki atribut-atribut
+- Contoh appBar memiliki title yang bertipe widget dalam widget sendiri bisa didesain menggunakan atribut yang tersedia pada body seperti backgroundcolor dan text
+- Pada text sendiri bisa ditambah dengan textStyle untuk merubah font, color, size, bold, font weight  dll.
 
-### Membuat login
-1. memakai auth sanctum
-2. ketika ingin menggunakan apiResource category dan transaction harus melakukan login terlebih dahulu, jika tidak maka status masih unauthenticated
-3. pada postman bagian header jangan lupa checklist bagian key menjadi Accept untuk mengubah hasilnya supaya pakai session
-4. cek document laravel untuk membuat login
-5. buat terlebih dahulu route login sanctum
-6. memakai hash untuk mengenerate passowrd(memakai library facades
-7. untuk mendapat token login menggunakan library validation exception
-8. percobaan isi data untuk user menggunakan tinker, password menggunakan bcrypt untuk mengenkripsi password
-9. cek di postman untuk route api/sanctum/token menggunakan method post
-10. lakukan login menggunakan postman pada bagian body isi key dan value sesuai dengan atribut tabel user
-11. setelah berhasil login maka akan mendapat token 
-12. masukkan token pada authorization, pilih type bearer token dan method get, akses ke route categories/transactions jika berhasil muncul data dari tabel maka berhasil
-13. selanjutnya membuat auth controller dengan 3 function (login, logout, register)
-14. ubah route menjadi route post sesuai dengan 3 method pada controller
+- Fungsi const, menetapkan atribut-atribut pada widget
 
-### Membuat register
-15. mencoba register dengan create user baru pada method resgister
-16. coba register pada postman, isi bagian body sesuai dengan field tabel
-17. jalankan route dengan method post, salin token lalu cek apakah data sudah masuk/belum
+- keyboardType dengan tipedata TextInputType untuk emailAdress
+- elevatedButton ketika onPressed atau kondisi diklik maka muncul login atau ada aksi ->merubah tampilan 
+- jika yang dieksekusi 1 memakai tanda panah
+- jika yang dieksekusi lebih dari 1 memakai ()
+- jika onPressed bersifat null maka tidak menimbulkan reaksi apa-apa
+- untuk margin menggunakan edgeInsets.only -> custom 
+- elevation sebagai shadow
 
-### Membuat logout
-18. membuat logout dengan mencari user kemudian terdapat pengecekan jika user tersebut ada maka token akan dihapus dan berhasil logout
+- routes -> sebagai navigasi seperti pada laravel
+- inkWell -> sebagai hyperlink atau href seperti pada web
 
-### Wakatime
-![Screenshot](img/wakatime.png)
+
+![Screenshot](img/wktm.png)
+08/11/2021
